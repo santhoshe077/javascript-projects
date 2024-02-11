@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
     font-family: 'Times New Roman', Times, serif;
 }
 .container
 {
     min-height: 100vh;
-    background:linear-gradient(190deg,blue,pink);
+    background:linear-gradient(190deg,rgba(45, 45, 231, 0.921),#ffc0cb);
     padding: 10px;
 }
 .todo
@@ -61,7 +61,7 @@ button
     color: white;
     font-size: 16px;
     cursor: pointer;
-    background-color: #0a9c11;
+    background-color: #05b40e;
     border-radius: 10px;
 }
 
@@ -73,11 +73,11 @@ button:hover
     color: white;
     font-size: 16px;
     cursor: pointer;
-    background-color: #057a0b;
+    background-color: #0d9e14;
     border-radius: 10px;
 }
 ul li {
-    position: relative;
+    position:relative;
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -108,5 +108,23 @@ ul li.checked::before
 {
     color: #666;
     background-image: url(image/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+ul li span:hover{
+    background-color :rgb(245, 223, 246);
+    
 }
 
